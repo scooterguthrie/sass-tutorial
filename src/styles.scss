@@ -1,7 +1,12 @@
-// Theme Colors
-$primary:   navy;
-$secondary: blue;
-$info:      purple;
-$error:     red;
-$warning:   orange;
-$success:   green;
+// Fonts
+@import "./assets/styles/fonts";
+
+// Variables
+@import "./assets/styles/variables";
+
+// Base
+@import "./assets/styles/base";
+
+// Components
+@import "./assets/styles/buttons";
+@import "./assets/styles/cards";

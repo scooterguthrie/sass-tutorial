@@ -1,0 +1,44 @@
+// Theme Colors
+$primary: navy;
+$secondary: blue;
+$info: purple;
+$error: red;
+$warning: orange;
+$success: green;
+$black: black;
+$white: white;
+
+// Color Palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "error": $error,
+  "warning": $warning,
+  "success": $success,
+  "black": $black,
+  "white": $white,
+);
+
+@debug map-get($colors, "error");
+@debug map-has-key($colors, "error");
+@debug map-remove($colors, "primary");
+@debug map-merge(
+  $colors,
+  (
+    "pink": pink,
+  )
+);
+
+// Body
+$body-bg: $white;
+$body-color: $black;
+
+// Fonts
+$font-family: "Roboto", sans-serif;
+
+$font-size-base: 1rem; //16px
+$font-size-xs: $font-size-base * 0.5; //8px
+$font-size-sm: $font-size-base * 0.75; //12px
+$font-size-lg: $font-size-base * 1.25; //20px
+$font-size-xl: $font-size-base * 1.5; //24px
