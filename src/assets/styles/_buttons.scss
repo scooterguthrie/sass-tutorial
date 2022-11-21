@@ -1,4 +1,13 @@
 // Test Button
-.btn-test {
-  background-color: map-get($colors, "info");
+.btn {
+  padding: $btn-padding-y $btn-padding-x;
+  border: none;
+  border-radius: $border-radius;
+}
+
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    color: $white;
+    background-color: $val;
+  }
 }
