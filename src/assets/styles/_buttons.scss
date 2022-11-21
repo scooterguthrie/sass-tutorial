@@ -2,7 +2,7 @@
 .btn {
   padding: $btn-padding-y $btn-padding-x;
   border: none;
-  border-radius: $border-radius;
+  border-radius: $btn-border-radius;
 }
 
 @each $key, $val in $colors {
